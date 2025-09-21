@@ -1,57 +1,90 @@
 DEPENDENCIES:  
 INSTALL THE FOLLOWING LIBRARIES:  
-  pip install pandas, numpy, matplotlib, scikit-learn, joblib  
+  pip install pandas, seaborn, joblib, numpy, matplotlib, scikit-learn  
 
 DATASET INFORMATION:  
-   SOURCE:  
-- Advertising Dataset  
-- Machine-Learning/Suprevised ML/Advertisement Case Study/Advertising.csv at main · sakshikedari3/Machine-Learning
+  SOURCE:  
+  - Advertising Dataset (Advertising.csv)  
 
-  FEATURES(3):  
-1) TV  
-2) Radio  
-3) Newspaper  
+  FEATURES(4):  
+  1) Unnamed: 0 (Index)  
+  2) TV  
+  3) Radio  
+  4) Newspaper  
 
   TARGET:  
   1) Sales  
 
 DATA SAMPLE:  
-   TV     Radio  Newspaper  Sales  
-0 230.1   37.8      69.2     22.1  
-1  44.5   39.3      45.1     10.4  
-2  17.2   45.9      69.3      9.3  
+   Unnamed: 0     TV  radio  newspaper  sales  
+0           1  230.1   37.8       69.2   22.1  
+1           2   44.5   39.3       45.1   10.4  
+2           3   17.2   45.9       69.3    9.3  
+3           4  151.5   41.3       58.5   18.5  
+4           5  180.8   10.8       58.4   12.9  
 
 DATA DESCRIPTION:  
 - No missing values in any column  
-- Correlation matrix shows TV and radio have strong correlation with sales  
+- Features after dropping 'Unnamed: 0' used for modeling  
+- Correlation matrix shows TV and radio have strong correlation with Sales  
 
 WORKFLOW:  
   DATA PREPARATION:  
-- Load dataset and check for missing values  
-- Select features (TV, radio, newspaper) and target (sales)  
+  - Load CSV file, remove 'Unnamed: 0' column  
+  - Display dataset sample, description, columns, datatypes  
+  - Check missing values (0 for all columns)  
+  - Show correlation matrix and pairplot  
+
+  TRAIN TEST SPLIT:  
+  - Split data into 80% training and 20% testing sets  
 
   MODEL TRAINING AND EVALUATION:  
-- Train linear regression model  
-- Evaluate with mean squared error, root mean squared error, R² score  
+  - Train Linear Regression model  
+  - Evaluate using mean squared error, root mean squared error, RÂ² score  
+  - Save trained model to Artifacts/Advertisement/linear_model_v1.joblib  
+  - Output features and target samples during training  
 
   MODEL SAVING AND LOADING:  
-- Save model with joblib as advertising_model.joblib  
-- Machine-Learning/Suprevised ML/Advertisement Case Study/linear_model_v1.joblib at main · sakshikedari3/Machine-Learning
-- Load model for predictions without retraining  
+  - Load saved model for predictions without retraining  
 
-RESULTS:  
+RUNNING THE PROJECT:  
+  - Train model:  
+    python script.py --train  
+  - Predict / baseline:  
+    python script.py --predict  
+
+EXPECTED OUTPUT (after training):  
+  - Model saved at Artifacts/Advertisement/linear_model_v1.joblib  
+  - Model training completed  
+
+VISUALIZATIONS:  
+  - Correlation heatmap (saved as Correlation_plot.png)  
+  - Pairplot of features (saved as Pairplot_plot.png)  
+  - Scatter plot of actual vs predicted sales (saved as prediction_plot.png)  
+
+MODEL PERFORMANCE (example):  
 mean square error is: 3.1740973539761033  
 root mean square error is: 1.78159966153345  
 R square value is: 0.899438024100912  
 
-model coefficients are:  
-TV: 0.044729517468716326  
-radio: 0.18919505423437652  
-newspaper: 0.0027611143413671935  
-intercept c: 2.979067338122629  
+MODEL COEFFICIENTS:  
+  TV: 0.044729517468716326  
+  radio: 0.18919505423437652  
+  newspaper: 0.0027611143413671935  
+  intercept c: 2.979067338122629  
 
 MODEL STORAGE:  
-- Model saved as advertising_model.joblib  
+  - Model saved at Artifacts/Advertisement/linear_model_v1.joblib  
+  - Load anytime:  
+    from joblib import load  
+    model = load("Artifacts/Advertisement/linear_model_v1.joblib")  
+
+SAMPLE PREDICTION:  
+  sample = X_test.iloc[]
+  pred = model.predict(sample)  
+  print("prediction:", pred)  # predicted sales value
 
 AUTHOR:  
-     Sakshi Kedari
+Sakshi Santosh Kedari  
+
+date: 21/09/2025, 6 PM IST  
