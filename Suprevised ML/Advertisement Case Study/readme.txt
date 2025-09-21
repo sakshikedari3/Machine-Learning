@@ -1,2 +1,0 @@
-This project explores the relationship between advertising budgets across TV, radio, and newspaper channels and their impact on product sales. Using Python and scikit-learn, I built a linear regression model to predict sales based on media spend. The pipeline includes data cleaning, exploratory analysis (correlation heatmaps, pairplots), model training, evaluation (MSE, RMSE, R²), and visualization of actual vs predicted values. The trained model and outputs are stored in a structured `Artifacts` folder for reproducibility.
-
