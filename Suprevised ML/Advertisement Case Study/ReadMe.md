@@ -32,15 +32,15 @@ Python	pandas, scikit-learn, matplotlib
 
 ├── artifacts/
 
-│   ├── model.pkl             # Trained model
+│     ├── model.pkl             # Trained model
 
-│   ├── metrics.txt           # Evaluation metrics
+│     ├── metrics.txt           # Evaluation metrics
 
-│   ├── pairplot.png          # Feature relationships
+│     ├── pairplot.png          # Feature relationships
 
-│   ├── heatmap.png           # Feature correlation heatmap
+│     ├── heatmap.png           # Feature correlation heatmap
 
-│   └── correlation.csv       # Correlation matrix
+│     └── correlation.csv       # Correlation matrix
 
 └── README.md
 
@@ -99,6 +99,7 @@ Email: sakshikedari426@gmail.com
 LinkedIn: www.linkedin.com/in/sakshi-kedari-66001637b
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 
 
