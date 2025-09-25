@@ -51,7 +51,7 @@ Predict sales revenue based on advertising expenditure in different media channe
 ### ✅ Prerequisites  
 Install the required dependencies:
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn scikit-learn joblib
 ```
 
 ### ▶️ Running the Application  
