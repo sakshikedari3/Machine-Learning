@@ -1,0 +1,3 @@
+Mean Square Error:4672.043549643721
+Root Mean Square Error: 68.3523485305642
+R^2 Score: 0.7149168473012073
