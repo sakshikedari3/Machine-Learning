@@ -1,0 +1,2 @@
+model is loaded 
+best accuracy is : 0.6851851851851852
