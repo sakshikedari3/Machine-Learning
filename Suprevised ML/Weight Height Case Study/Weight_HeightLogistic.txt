@@ -1,0 +1,99 @@
+first few records of the data set are : 
+********************************************
+   Gender     Height      Weight
+0       1  73.847017  241.893563
+1       1  68.781904  162.310473
+2       1  74.110105  212.740856
+3       1  71.730978  220.042470
+4       1  69.881796  206.349801
+********************************************
+dimention of dataset is : (10000, 3)
+********************************************
+first few records of the data set are : 
+********************************************
+   Gender     Height      Weight
+0       1  73.847017  241.893563
+1       1  68.781904  162.310473
+2       1  74.110105  212.740856
+3       1  71.730978  220.042470
+4       1  69.881796  206.349801
+********************************************
+dimentation of feature : (10000, 2)dimentation of label : (10000,)********************************************
+dataset loaded succesfullyScaled features: [[ 1.94406149  2.50579697]
+ [ 0.62753668  0.02710064]
+ [ 2.01244346  1.59780623]
+ ...
+ [-0.64968792 -1.02672965]
+ [ 0.69312469  0.07512745]
+ [-1.14970831 -1.48850724]]
+Training set size: 8000
+Test set size: 2000
+dimentions of traing data set : 8000
+dimentions of traing data set : 2000
+dimentions of traing data set : 8000
+dimentions of traing data set : 2000
+first few records of the data set are : 
+********************************************
+   Gender     Height      Weight
+0       1  73.847017  241.893563
+1       1  68.781904  162.310473
+2       1  74.110105  212.740856
+3       1  71.730978  220.042470
+4       1  69.881796  206.349801
+********************************************
+dimention of dataset is : (10000, 3)
+********************************************
+first few records of the data set are : 
+********************************************
+   Gender     Height      Weight
+0       1  73.847017  241.893563
+1       1  68.781904  162.310473
+2       1  74.110105  212.740856
+3       1  71.730978  220.042470
+4       1  69.881796  206.349801
+********************************************
+dimentation of feature : (10000, 2)dimentation of label : (10000,)********************************************
+dataset loaded succesfullyScaled features: [[ 1.94406149  2.50579697]
+ [ 0.62753668  0.02710064]
+ [ 2.01244346  1.59780623]
+ ...
+ [-0.64968792 -1.02672965]
+ [ 0.69312469  0.07512745]
+ [-1.14970831 -1.48850724]]
+Training set size: 8000
+Test set size: 2000
+dimentions of traing data set : 8000
+dimentions of traing data set : 2000
+dimentions of traing data set : 8000
+dimentions of traing data set : 2000
+dataset loaded succesfullypredicted values are : [1 1 1 ... 0 1 0]
+accuracy is :: 0.9245
+confusion matrics is : [[902  86]
+ [ 65 947]]
+report is :               precision    recall  f1-score   support
+
+           0       0.93      0.91      0.92       988
+           1       0.92      0.94      0.93      1012
+
+    accuracy                           0.92      2000
+   macro avg       0.92      0.92      0.92      2000
+weighted avg       0.92      0.92      0.92      2000
+ 
+dataset loaded succesfullypredicted values are : [1 1 1 ... 0 1 0]
+accuracy is :: 0.9245
+confusion matrics is : [[902  86]
+ [ 65 947]]
+report is :               precision    recall  f1-score   support
+
+           0       0.93      0.91      0.92       988
+           1       0.92      0.94      0.93      1012
+
+    accuracy                           0.92      2000
+   macro avg       0.92      0.92      0.92      2000
+weighted avg       0.92      0.92      0.92      2000
+ 
+Feature importance (coefficients):
+Weight    6.115787
+Height   -1.809472
+dtype: float64
+********************************************
