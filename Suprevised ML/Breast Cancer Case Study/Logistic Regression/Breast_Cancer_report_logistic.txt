@@ -1,0 +1,17 @@
+Testing accuracy is : 0.9714285714285714
+classification report is :
+              precision    recall  f1-score   support
+
+           2       0.99      0.97      0.98        89
+           4       0.94      0.98      0.96        51
+
+    accuracy                           0.97       140
+   macro avg       0.97      0.97      0.97       140
+weighted avg       0.97      0.97      0.97       140
+
+confusion matrix is :
+[[86  3]
+ [ 1 50]]
+Number of feature names: 9
+Number of importances: 9
+AUC Score: 0.9733
